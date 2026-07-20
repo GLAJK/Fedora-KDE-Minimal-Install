@@ -18,7 +18,7 @@ Lightweight, debloated Fedora KDE Plasma setup scripts optimized for AMD systems
 | :--- | :--- | :--- |
 | `amd-drivers.sh` | Sets up AMD GPU drivers and media libraries. | Installs 64-bit and 32-bit drivers for Steam gaming. |
 | `apps.sh` | Installs essential non-KDE applications and CLI utilities. | Interactive setup for apps and tools like `brave-origin`, `bat`, `eza`, `fastfetch`, `steam`.  |
-| `kde-minimal-install.sh` | Installs base Plasma desktop environment. | Removes leftover bloat (`plasma-discover`, `kdeconnect`, `khelpcenter`). |
+| `kde-minimal-install.sh` | Installs base Plasma desktop environment. | Installs core desktop (`plasma-desktop`), `konsole`, `dolphin`, and `dolphin-plugins`. |
 | `kde-optional-apps.sh` | Installs optional native KDE utilities. | Interactive prompts to add tools like `kate`, `ark`, `okular`, or `gwenview`. |
 | `multimedia.sh` | Installs system-wide audio/video codecs. | Enables RPM Fusion, replaces `ffmpeg-free` with full `ffmpeg`, and swaps to Mesa Freeworld drivers. |
 
@@ -30,4 +30,40 @@ Boot into your minimal Fedora environment and run:
 sudo dnf update -y && sudo dnf install git -y
 git clone https://github.com/GLAJK/Fedora-KDE-Minimal-Install.git
 cd Fedora-KDE-Minimal-Install
+```
+### 2. Run the Scripts in Order
+Make sure the scripts are executable and run them using sudo:
+```bash
+chmod +x *.sh
+```
+
+1. Install AMD GPU Drivers & Vulkan libraries:
+```bash
+sudo ./amd-drivers.sh
+```
+
+2. Install Multimedia Codecs & Hardware Acceleration:
+```bash
+sudo ./multimedia.sh
+```
+
+3. Install Minimal KDE Plasma Desktop Environment:
+```bash
+sudo ./kde-minimal-install.sh
+```
+
+4. Install Applications & CLI Utilities (Optional):
+```bash
+sudo ./apps.sh
+```
+
+5. Install Core Utilities (Optional):
+```bash
+sudo ./kde-optional-apps.sh
+```
+
+### 3. Reboot
+Once everything is completed, safely reboot your system to enter your clean, minimal KDE Plasma environment:
+```bash
+sudo reboot
 ```
