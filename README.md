@@ -17,6 +17,7 @@ Lightweight, debloated Fedora KDE Plasma setup scripts optimized for AMD systems
 | Script | Purpose | Notes |
 | :--- | :--- | :--- |
 | `amd-drivers.sh` | Sets up AMD GPU drivers and media libraries. | Installs 64-bit and 32-bit drivers for Steam gaming. |
+| `apps.sh` | Installs essential non-KDE applications and CLI utilities. | Interactive setup for apps and tools like Brave Browser, `bat`, `eza`, and `fastfetch`. |
 | `kde-minimal-install.sh` | Installs base Plasma desktop environment. | Removes leftover bloat (`plasma-discover`, `kdeconnect`, `khelpcenter`). |
 | `kde-optional-apps.sh` | Installs optional native KDE utilities. | Interactive prompts to add tools like `kate`, `ark`, `okular`, or `gwenview`. |
 
