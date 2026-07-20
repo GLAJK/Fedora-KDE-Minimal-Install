@@ -65,5 +65,5 @@ sudo ./kde-optional-apps.sh
 ### 3. Reboot
 Once everything is completed, safely reboot your system to enter your clean, minimal KDE Plasma environment:
 ```bash
-sudo reboot
+reboot
 ```
