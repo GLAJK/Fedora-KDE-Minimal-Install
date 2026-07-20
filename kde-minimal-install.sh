@@ -22,6 +22,7 @@ dnf install -y \
   dolphin-plugins \
   konsole \
   kwalletmanager \
+  ksshaskpass \
   kde-gtk-config \
   kscreen \
   plasma-desktop \
