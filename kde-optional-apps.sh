@@ -81,6 +81,20 @@ if [[ "$resp_partition" =~ ^([yY][eE][sS]|[yY])$ ]]; then
   CHOSEN_PACKAGES+=(kde-partitionmanager)
 fi
 
+# 10. System Monitor
+echo -n "Install 'plasma-systemmonitor' (System resources & task manager)? [y/N]: "
+read -r resp_sysmon
+if [[ "$resp_sysmon" =~ ^([yY][eE][sS]|[yY])$ ]]; then
+  CHOSEN_PACKAGES+=(plasma-systemmonitor)
+fi
+
+# 11. Spectacle (Screenshot Utility)
+echo -n "Install 'spectacle' (Screenshot capture utility)? [y/N]: "
+read -r resp_spectacle
+if [[ "$resp_spectacle" =~ ^([yY][eE][sS]|[yY])$ ]]; then
+  CHOSEN_PACKAGES+=(spectacle)
+fi
+
 echo "---------------------------------------------------------"
 
 # Execute installation if any packages were chosen

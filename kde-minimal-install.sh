@@ -10,7 +10,7 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 echo "=========================================="
-echo "  Installing Fedora KDE Minimal Desktop   "
+echo "   Installing Fedora KDE Minimal Desktop   "
 echo "=========================================="
 
 echo " Refreshing DNF package metadata "
@@ -18,11 +18,20 @@ dnf check-update || true
 
 echo " Installing core KDE applications "
 dnf install -y \
-  konsole \
   dolphin \
   dolphin-plugins \
-  plasma-desktop
+  konsole \
+  kwalletmanager \
+  kde-gtk-config \
+  kscreen \
+  plasma-desktop \
+  plasma-login-manager \
+  plasma-nm
+
+echo " Enabling display manager service "
+systemctl enable --force plasmalogin.service
+systemctl set-default graphical.target
 
 echo "=========================================="
-echo "   KDE Minimal Installed Successfully!    "
+echo "    KDE Minimal Installed Successfully!    "
 echo "=========================================="

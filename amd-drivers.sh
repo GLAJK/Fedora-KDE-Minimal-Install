@@ -19,7 +19,6 @@ PACKAGES=(
   mesa-dri-drivers
   mesa-va-drivers
   mesa-vulkan-drivers
-  mesa-vdpau-drivers
   mesa-libOpenCL
   mesa-libEGL
   mesa-libGL
@@ -39,9 +38,7 @@ if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
   echo " Adding 32-bit (i686) driver libraries "
   PACKAGES+=(
     mesa-dri-drivers.i686
-    mesa-va-drivers.i686
     mesa-vulkan-drivers.i686
-    mesa-vdpau-drivers.i686
     mesa-libOpenCL.i686
     mesa-libEGL.i686
     mesa-libGL.i686
