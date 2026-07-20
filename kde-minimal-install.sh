@@ -26,7 +26,8 @@ dnf install -y \
   kscreen \
   plasma-desktop \
   plasma-login-manager \
-  plasma-nm
+  plasma-nm \
+  plasma-firewall
 
 echo " Enabling display manager service "
 systemctl enable --force plasmalogin.service
