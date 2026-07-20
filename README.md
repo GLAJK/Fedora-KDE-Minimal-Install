@@ -20,6 +20,7 @@ Lightweight, debloated Fedora KDE Plasma setup scripts optimized for AMD systems
 | `apps.sh` | Installs essential non-KDE applications and CLI utilities. | Interactive setup for apps and tools like `brave-origin`, `bat`, `eza`, `fastfetch`, `steam`.  |
 | `kde-minimal-install.sh` | Installs base Plasma desktop environment. | Removes leftover bloat (`plasma-discover`, `kdeconnect`, `khelpcenter`). |
 | `kde-optional-apps.sh` | Installs optional native KDE utilities. | Interactive prompts to add tools like `kate`, `ark`, `okular`, or `gwenview`. |
+| `multimedia.sh` | Installs system-wide audio/video codecs. | Enables RPM Fusion, replaces `ffmpeg-free` with full `ffmpeg`, and swaps to Mesa Freeworld drivers. |
 
 ## How to Use
 
