@@ -22,7 +22,6 @@ dnf install -y \
   dolphin-plugins \
   konsole \
   kwalletmanager \
-  ksshaskpass \
   kinfocenter \
   kde-gtk-config \
   kscreen \
