@@ -23,6 +23,7 @@ dnf install -y \
   konsole \
   kwalletmanager \
   ksshaskpass \
+  kinfocenter \
   kde-gtk-config \
   kscreen \
   plasma-desktop \
